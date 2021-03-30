@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sarker.backbenchersextended">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name=".model.OfflineFirebase"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_logo"
+        android:label="BackBenchers"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FriendsFeed" />
+        <activity android:name=".Comments" />
+        <activity
+            android:name=".AddTeacher"
+            android:theme="@style/CusMat" />
+        <activity
+            android:name=".BLCLink"
+            android:theme="@style/CusMat" />
+        <activity android:name=".ViewLecture" />
+        <activity
+            android:name=".AddLecture"
+            android:theme="@style/CusMat" />
+        <activity android:name=".AddCourse" />
+        <activity android:name=".MyProfile" />
+        <activity android:name=".AdminPanel" />
+        <activity android:name=".ManageRoutine" />
+        <activity
+            android:name=".AddRoutine"
+            android:theme="@style/CusMat" />
+        <activity
+            android:name=".EditRoutine"
+            android:theme="@style/CusMat" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".WriteSomething" />
+        <activity android:name=".NeedBlood" />
+        <activity android:name=".Student" />
+        <activity android:name=".Teacher" />
+        <activity android:name=".Lecture" />
+        <activity android:name=".Routine" />
+        <activity
+            android:name=".Dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".SetAlarm" />
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

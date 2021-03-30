@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/line_shape"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:layout_toStartOf="@+id/RL"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/RL">
+
+                <TextView
+                    android:id="@+id/course_title"
+                    android:textIsSelectable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Object Oriented Programming "
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/course_code"
+                    android:layout_marginTop="5dp"
+                    android:textIsSelectable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="CSE - 225"
+                    android:textStyle="bold"
+                    android:textSize="13.5sp" />
+
+                <TextView
+                    android:id="@+id/course_teacher"
+                    android:layout_marginTop="5dp"
+                    android:textIsSelectable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Masud Rabbani (MR)"
+                    android:textSize="13.5sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginTop="7dp"
+                    android:textIsSelectable="true"
+                    android:id="@+id/room_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="902 DT-5"
+                    android:textAlignment="center"
+                    android:textSize="13.5sp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/class_time"
+                    android:layout_marginTop="7dp"
+                    android:textIsSelectable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:fontFamily="serif"
+                    android:text="08:30 AM - 10:00 AM"
+                    android:textAlignment="center"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/class_time"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/set_alarm0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_notify0"
+                    android:layout_gravity="center"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/class_time"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/set_alarm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_notify1"
+                    android:layout_gravity="center"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

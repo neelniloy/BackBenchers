@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+   >
+
+        <item
+            android:id="@+id/nav_admin"
+            android:icon="@drawable/ic_admin"
+            android:title="Admin Panel" />
+
+        <item
+            android:id="@+id/nav_contribute"
+            android:icon="@drawable/ic_contribute"
+            android:title="Contribute Lecture" />
+        <item
+            android:id="@+id/nav_write"
+            android:icon="@drawable/ic_edit"
+            android:title="Write Something. . ." />
+        <item
+            android:id="@+id/nav_news_feed"
+            android:icon="@drawable/ic_news_feed"
+            android:title="Friends Feed" />
+
+        <item
+            android:id="@+id/nav_need_blood"
+            android:icon="@drawable/ic_need_blood"
+            android:title="Need Blood ?" />
+
+
+        <item
+            android:id="@+id/nav_check_update"
+            android:icon="@drawable/ic_check_update"
+            android:title="@string/update" />
+
+        <item
+            android:id="@+id/nav_report_bug"
+            android:icon="@drawable/ic_bug_report"
+            android:title="Report A Bug" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about"
+            android:title="@string/about" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_sign_out"
+            android:title="Leave Classroom" />
+
+
+
+</menu>

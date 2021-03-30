@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/info"
+        android:layout_marginBottom="25dp"/>
+
+
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the seat of BackBenchers.\nWhat do you want ?"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        />
+
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/info"
+        android:id="@+id/btn_create_class"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Create A Classroom"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:background="@drawable/round_shape"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/or"
+        android:layout_below="@+id/btn_create_class"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/or"
+        android:id="@+id/btn_join_class"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Join A Classroom"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:background="@drawable/round_shape"
+        />
+
+
+
+
+</RelativeLayout>
