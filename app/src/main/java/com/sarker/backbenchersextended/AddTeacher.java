@@ -226,7 +226,7 @@ public class AddTeacher extends AppCompatActivity {
         Toast.makeText(AddTeacher.this, "Teacher Added Successfully", Toast.LENGTH_SHORT).show();
 
         loadingBar.dismiss();
-        Intent intent = new Intent(AddTeacher.this, AdminPanel.class);
+        Intent intent = new Intent(AddTeacher.this, AddTeacher.class);
         intent.putExtra("classCode", classCode);
         startActivity(intent);
         finish();

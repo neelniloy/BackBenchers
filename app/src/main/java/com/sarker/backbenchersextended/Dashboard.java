@@ -251,7 +251,7 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
                 builder.setTitle("About Backbenchers");
                 builder.setIcon(R.drawable.ic_logo);
                 builder.setCancelable(true);
-                builder.setMessage("BackBenchers is a Class Management System that aims to simplify creating, distributing class materials. You can use BackBenchers in your school/college/varsity to streamline assignments, boost collaboration, and foster communication. Students can easily track classwork,can see their class routine, Course lectures,Teachers Information, Student Informations and many more...Also can share class lecture through Backbenchers.")
+                builder.setMessage("BackBenchers is a Class Management System that aims to simplify creating, distributing class materials. You can use BackBenchers in your school/college/varsity to streamline assignments, boost collaboration, and foster communication. Students can easily track classwork,can see their class routine, Course lectures,Teachers Information, Student Informations and many more...Also can share class lecture through Backbenchers.\n\n- Team BackBenchers")
                         .setPositiveButton("Visit Us", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {

@@ -70,7 +70,7 @@ public class Teacher extends AppCompatActivity {
 
         user_id = mAuth.getCurrentUser().getUid();
 
-        tRef = FirebaseDatabase.getInstance().getReference().child("Classroom").child(classCode);
+        tRef = FirebaseDatabase.getInstance().getReference().child("Classroom").child(classCode).child("Teacher");
 
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
@@ -89,9 +89,9 @@ public class Teacher extends AppCompatActivity {
                 tList.clear();
                 tAdapter.notifyDataSetChanged();
 
-                if (snapshot.child("Teacher").exists()){
+                if (snapshot.exists()){
 
-                    for (DataSnapshot postSnapshot : snapshot.child("Teacher").getChildren()) {
+                    for (DataSnapshot postSnapshot : snapshot.getChildren()) {
 
                         TeacherInfo info = postSnapshot.getValue(TeacherInfo.class);
 
