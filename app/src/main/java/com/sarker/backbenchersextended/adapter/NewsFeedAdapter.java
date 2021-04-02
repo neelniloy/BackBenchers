@@ -1,4 +1,4 @@
-package com.sarker.backbenchersextended;
+package com.sarker.backbenchersextended.adapter;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -22,6 +22,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.sarker.backbenchersextended.Comments;
+import com.sarker.backbenchersextended.model.Posts;
+import com.sarker.backbenchersextended.R;
 import com.squareup.picasso.Picasso;
 
 import java.text.ParseException;
@@ -129,10 +132,10 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.NewsVi
 
         holder.description.setText(post.getDescription());
 
-        if (post.getPostimage().equals("")){
-            holder.postimage.setVisibility(View.GONE);
-        }else {
+        if (!post.getPostimage().equals("")){
             Picasso.get().load(post.getPostimage()).placeholder(R.drawable.logo).fit().centerCrop().into(holder.postimage);
+        }else {
+
         }
 
 
@@ -204,7 +207,7 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.NewsVi
         });
 
 
-        holder.ComRef.child(post.getClassCode()).child("Comment").child(key).addValueEventListener(new ValueEventListener() {
+        holder.ComRef.child(post.getClassCode()).child("Posts").child(key).child("Comment").child(key).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
@@ -293,7 +296,16 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.NewsVi
 
 
 
+    }
 
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return position;
     }
 
     @Override

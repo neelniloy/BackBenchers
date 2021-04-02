@@ -1,4 +1,4 @@
-package com.sarker.backbenchersextended;
+package com.sarker.backbenchersextended.model;
 
 import java.io.Serializable;
 
