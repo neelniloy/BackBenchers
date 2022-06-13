@@ -3,7 +3,7 @@ Classroom Management System
 
 # Preview Images
 1. Splash Screen
-<img src = "1.png" height="360" />
+<img src = "1.png" width="360" height="720" />
 
 2. Getting Start
 <img src = "2.png" width="360" height="720" />
